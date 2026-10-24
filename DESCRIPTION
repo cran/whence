@@ -1,0 +1,36 @@
+Package: whence
+Type: Package
+Title: Explain Where a Number Came from in 'shiny' Apps
+Version: 0.1.0
+Authors@R: person(
+    given = "Tanmay",
+    family = "Chanda",
+    email = "tanmaychanda96@gmail.com",
+    role = c("aut", "cre", "cph"))
+Description: Lets the viewer of a 'shiny' dashboard click a number, a row
+    of a summary table or a bar of a 'ggplot2' plot, and see where it came
+    from. The pipeline that makes the result is split into its steps. Each
+    step is run in turn, and the number of rows after each step is
+    recorded. The result is an attrition waterfall that shows how many
+    rows each step removed, and what share of the rows that was, together
+    with code that reproduces the result. The steps are found from the
+    expression alone, so the pipeline does not need to be rewritten. The
+    rows that contribute to a result, and the rows that a step removed, are
+    found only when the viewer asks for them.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-GB
+Depends: R (>= 4.1.0)
+Imports: htmltools, rlang, shiny (>= 1.7.0), utils
+Suggests: dplyr, ggplot2, reactable, shinytest2, testthat (>= 3.0.0),
+        tidyr, withr
+URL: https://github.com/tenmeh/whence, https://tenmeh.github.io/whence/
+BugReports: https://github.com/tenmeh/whence/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-10-15 17:49:38 UTC; tchan
+Author: Tanmay Chanda [aut, cre, cph]
+Maintainer: Tanmay Chanda <tanmaychanda96@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-24 16:20:02 UTC
